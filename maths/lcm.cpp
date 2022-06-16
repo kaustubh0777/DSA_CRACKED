@@ -18,7 +18,7 @@ while(true)
 
 if(res%a==0 && res%b==0)
 {
-    cout<<res;
+    cout<<res<<endl;
     break;
 
 }
@@ -49,3 +49,4 @@ int lcm(int a,int b)
 }
 
 lcm=(a*b)/gcd(a,b)
+*/

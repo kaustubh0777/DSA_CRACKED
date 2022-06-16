@@ -4,6 +4,6 @@
 
 
 <ul>
-<li ><b><a href="https://github.com/kaustubh0777/DSA_CRACKED/tree/master/bit_manipulation">Bit Manipulation</a></b></li>
 <li ><b><a href="https://github.com/kaustubh0777/DSA_CRACKED/tree/master/maths">Mathematics</a></b></li>
-</ul
+<li ><b><a href="https://github.com/kaustubh0777/DSA_CRACKED/tree/master/bit_manipulation">Bit Manipulation</a></b></li>
+</ul>

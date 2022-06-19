@@ -9,34 +9,21 @@ int main()
 int n;
 cin>>n;
 
-int f=0;
-
-int res=1;
-
-if(n==1 || n==2)
+//use brian algo to count the total set bits
+int c=0;
+while(n)
 {
-    cout<<"Yes"<<endl;
+    n=n&(n-1);
+    c++;
+
+}
+
+if(c==1)
+{
+    cout<<"yes"<<endl;
 }
 else{
-    while(res<=n)
-    {
-        res*=2;
-        if(res==n)
-        {
-            cout<<"Yes"<<endl;
-            f=1;
-            break;
-        }
-
-
-    }
-
-    if(f==0)
-    {
-        cout<<"No"<<endl;
-    }
-
-
+    cout<<"no"<<endl;
 }
 
 }

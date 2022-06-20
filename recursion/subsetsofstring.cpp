@@ -15,7 +15,7 @@ void generate(string x,string s,int i)
 
    
     
-}
+}   
 
 int main()
 {

@@ -7,4 +7,5 @@
 <li ><b><a href="https://github.com/kaustubh0777/DSA_CRACKED/tree/master/maths">Mathematics</a></b></li>
 <li ><b><a href="https://github.com/kaustubh0777/DSA_CRACKED/tree/master/bit_manipulation">Bit Manipulation</a></b></li>
 <li><b><a href="https://github.com/kaustubh0777/DSA_CRACKED/tree/master/recursion">Recursion</a><b></li>
+<li><b><a href="https://github.com/kaustubh0777/DSA_CRACKED/tree/master/arrays">Arrays</a></li>
 </ul>

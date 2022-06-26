@@ -4,6 +4,7 @@
 
 using namespace std;
 
+//Time Complexity = O(n)
 int main()
 {
 vector<int>arr;

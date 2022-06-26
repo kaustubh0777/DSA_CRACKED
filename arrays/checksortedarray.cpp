@@ -4,6 +4,8 @@
 
 using namespace std;
 
+//Time Complexity = O(n)
+
 bool check(vector<int>&v)
 {
     int i=0;

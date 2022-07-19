@@ -12,44 +12,74 @@ struct node
         next = NULL;
     }
 };
-//10->19>20->21->NULL
 
-void segregate(node*head)
+node*segregate(node*head)
 {
-    node*cur=head;
-    int temp;
-    int temp1;
-    while(cur!=NULL)
-    {
-        if(cur->next->data%2!=0 && (cur->next->next->data)%2==0)
-        {
-            temp=cur->next->data;
-            temp1=cur->next->data;
+    node*evenstart=NULL;
+    node*evenend=NULL;
+    node*oddstart=NULL;
+    node*oddend=NULL;
 
-            cur->next->data=temp1;
-            cur->next->next->data=temp;
+    int x;
+
+    for(node*cur=head;cur!=NULL;cur=cur->next)
+    {
+        x=cur->data;
+        if(x%2==0 && x!=1)
+        {
+            if(evenstart==NULL)
+            {
+                evenstart=cur;
+                evenend=evenstart;
+            }
+            else{
+                evenend->next=cur;
+                evenend=evenend->next;
+            }
         }
-        cur-cur->next;
+        else{
+            if(oddstart==NULL)
+            {
+                oddstart=cur;
+                oddend=oddstart;
+            }
+            else{
+                oddend->next=cur;
+                oddend=oddend->next;
+            }
+        }
     }
+    if(oddstart==NULL || evenstart==NULL)
+    {
+        return head;
+    }
+    evenend->next=oddstart;
+    oddend->next=NULL;
+
+    return evenstart;
+    
 }
 void display(node*head)
 {
-    node*l=head;
-    while(l!=NULL)
+    node*m=head;
+
+    while(m!=NULL)
     {
-        cout<<l->data<<" ";
-        l=l->next;
+        cout<<m->data<<" ";
+        m=m->next;
     }
     cout<<endl;
 }
 
 int main()
 {
-    node *head = new node(10);
-    node *first = new node(19);
-    node *second = new node(20);
-    node *third = new node(22);
-    node *fourth = new node(21);
+    node *head = new node(1);
+    node *first = new node(2);
+    node *second = new node(3);
+    node *third = new node(4);
+    node *fourth = new node(5);
+
+    //op= 2->4->1->3->5
 
     head->next = first;
     first->next = second;
@@ -57,6 +87,6 @@ int main()
     third->next = fourth;
     fourth->next = NULL;
 
-    segregate(head);
-    display(head);
+    node*new_head=segregate(head);
+    display(new_head);
 }

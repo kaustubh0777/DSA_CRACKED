@@ -11,4 +11,5 @@
 <li><b><a href="https://github.com/kaustubh0777/DSA_CRACKED/tree/master/searching">Searching</a></li>
 <li><b><a href="https://github.com/kaustubh0777/DSA_CRACKED/tree/master/sorting">Sorting</a></li>
 <li><b><a href="https://github.com/kaustubh0777/DSA_CRACKED/tree/master/linked_list">Linked List</a></li>
+<li><b><a href="https://github.com/kaustubh0777/DSA_CRACKED/tree/master/stack">Stack</a></li>
 </ul>

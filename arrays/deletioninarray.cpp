@@ -1,3 +1,5 @@
+//Deletion of an element in an array
+
 #include<bits/stdc++.h>
 using namespace std;
 

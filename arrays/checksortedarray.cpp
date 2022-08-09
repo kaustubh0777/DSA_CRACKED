@@ -1,3 +1,5 @@
+//CHECKS IF AN ARRAY IS SORTED OR NOT
+
 #include<bits/stdc++.h>
 #define ll long long int
 #define m 1000000007

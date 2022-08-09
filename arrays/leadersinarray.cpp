@@ -18,8 +18,6 @@ int main()
 
     //16 17 4 3 5 2
 
-    int flag=0;
-
     int i=n-1;
     int maxi=INT_MIN;
 

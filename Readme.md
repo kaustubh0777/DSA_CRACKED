@@ -14,4 +14,5 @@
 <li><b><a href="https://github.com/kaustubh0777/DSA_CRACKED/tree/master/stack">Stack</a></li>
 <li><b><a href="https://github.com/kaustubh0777/DSA_CRACKED/tree/master/queue">Queue</a></li>
 <li><b><a href="https://github.com/kaustubh0777/DSA_CRACKED/tree/master/tree">Trees</a></li>
+<li><b><a href="https://github.com/kaustubh0777/DSA_CRACKED/tree/master/dynamic_programming">Dynamic Programming</a></li>
 </ul>

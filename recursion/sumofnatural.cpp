@@ -1,34 +1,39 @@
 #include<bits/stdc++.h>
-#define ll long long int
-#define m 1000000007
-
 using namespace std;
 
-int sum(int i,int n,int ans)
-{
-    if(i==n+1)
-    {
-        return ans;
-    }
+//functional recursion
 
-    return sum(i+1,n,ans+i);
-   
+int sum(int n)
+{
+    if(n==0)
+    {
+        return 0;
+    }
+    return n+sum(n-1);
 
 }
 
+
+/*
+Parameterized recursion
+void solve(int i,int sum)
+{
+    if(i<1)
+    {
+        cout<<sum<<endl;
+        return;
+    }
+    sum=sum+i;
+    return solve(i-1,sum);
+}
+*/
 int main()
 {
     int n;
     cin>>n;
 
-    int i=0;
-    int ans=0;
+    // int sum=0;
 
-    cout<<sum(i,n,ans)<<endl;
-
-
-
-    
-
+    cout<<sum(n)<<endl;
 
 }

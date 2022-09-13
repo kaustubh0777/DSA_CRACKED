@@ -5,7 +5,7 @@ print only one subsequence with sum equal to k
 using namespace std;
 
 bool solve(vector<int>&v,vector<int>ans,int i,int s,int k)
-{
+{   
     if(i>=v.size())
     {
         if(s==k)

@@ -26,7 +26,7 @@ void combination_sum(vector<int>&a,vector<vector<int>>&ans,vector<int>v,int i,in
             ans.push_back(v);
         }
         return;
-    }
+    }   
     if(a[i]<=k)//only add a[i] to the list if its less than or equal to the target
     {
         v.push_back(a[i]);//pick

@@ -1,25 +1,27 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void minimumcoins(int i,vector<int>v,vector<int>ds,int x,int res)
+int minimumcoins(int i,vector<int>&v,int x,vector<vector<int>>dp)
 {
-    if(i==v.size())
+    if(i==0)
     {
-        if(x==0)
+        if(x%v[i]==0)
         {
-            int p=ds.size();
-            res=min(res,p);
+            return (x/v[i]);
         }
-        return;
+        return 1e9;
     }
+    if(dp[i][x]!=-1)
+    {
+        return dp[i][x];
+    }
+    int nottake=0+minimumcoins(i-1,v,x,dp);
+    int take=INT_MAX;
     if(v[i]<=x)
     {
-        ds.push_back(v[i]);
-        minimumcoins(i+1,v,ds,x-v[i],res);
-        ds.pop_back();
-
+        take=1+minimumcoins(i,v,x-v[i],dp);
     }
-    minimumcoins(i+1,v,ds,x,res);
+    return dp[i][x]=min(take,nottake);
 }
 
 int main()
@@ -32,10 +34,16 @@ int main()
     for(int i=0;i<n;i++)
     {
         cin>>in;
-        v.push_back(in);    
+        v.push_back(in);
     }
-    int res=INT_MAX;
-    vector<int>ds;
-    minimumcoins(0,v,ds,x,res);
+    vector<vector<int>>dp(n,vector<int>(x+1,-1));
+    int ans =  minimumcoins(n-1,v,x,dp);
+    if(ans>=1e9)
+    {
+        cout<<-1<<endl;
+    }
+    else{
+        cout<<minimumcoins(n-1,v,x,dp)<<endl;
+    }
 
 }

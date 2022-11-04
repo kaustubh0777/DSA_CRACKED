@@ -15,9 +15,9 @@ int count(vector<int>&v,int sum,int i,int c)
     }
     
 
-     c=count(v,sum,i+1,c);
+     c=count(v,sum,i+1,c);//not take 
    
-     c=count(v,sum-v[i],i+1,c);
+     c=count(v,sum-v[i],i+1,c);//take
     
 
     return c;

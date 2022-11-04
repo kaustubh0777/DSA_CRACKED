@@ -12,7 +12,7 @@ cin>>n>>k;
 //using left shift
 
 int x=1<<(k-1);
-
+ 
 if((n&x)!=0)
 {
     cout<<"Kth bit is set"<<endl;

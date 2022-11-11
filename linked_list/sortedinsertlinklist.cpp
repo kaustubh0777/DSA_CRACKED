@@ -48,15 +48,15 @@ void display(node*head)
 }
 int main()
 {
-    node*head=new node(10);
-    node*first=new node(20);
-    node*second=new node(30);
-    node*third=new node(40);
+        node*head=new node(10);
+        node*first=new node(20);
+        node*second=new node(30);
+        node*third=new node(40);
 
-    head->next=first;
-    first->next=second;
-    second->next=third;
-    third->next=NULL;
+        head->next=first;
+        first->next=second;
+        second->next=third;
+        third->next=NULL;
 
     cout<<"ENter the value you want to insert in the sorted linked list"<<endl;
     int x;
